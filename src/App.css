@@ -1,0 +1,172 @@
+.navbar {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 60px;
+  background-color: #333;
+  color: #fff;
+  padding: 0 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 0 80px;
+}
+
+.navbar a {
+  /* color: #fff; */
+  color: rgb(184, 177, 177);
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 20px;
+  padding: 10px 20px;
+}
+
+.navbar a:hover {
+  color: #ddd;
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar .menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .navbar a {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .navbar .menu-icon {
+    display: block;
+  }
+}
+
+.navbar a.active {
+  /* color: rgb(184, 177, 177); */
+  color: #fff;
+  /* border-bottom: 2px solid #fff; */
+}
+
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+/**
+  Normal .submit-button
+*/
+.submit-button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.component {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  margin: 0px;
+  padding: 50px 0px 0px 100px;
+}
+
+.submit-button {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #3e8e41;
+}
+
+@media (max-width: 480px) {
+  .submit-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+
+/* table css **/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td img {
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  th,
+  td {
+    display: block;
+  }
+
+  td {
+    text-align: center;
+  }
+}
+/* table css end **/
+
+.cb-ul {
+  padding-left: 10px;
+  list-style: none;
+}
