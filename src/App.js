@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import AddCard from './components/AddCard';
 import { Routes, Route } from 'react-router-dom';
